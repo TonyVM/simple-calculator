@@ -108,3 +108,7 @@ body {
     align-items: center;
     padding: 10px;
 }
+
+.darky-mode {
+    color: white;
+}
