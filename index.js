@@ -43,7 +43,7 @@ function calculate() {
 
 function toggleDarkMode() {
     const calculator = document.querySelector('.calculator');
-    const darkModeBtn = document.getElementById('darkModeBtn');
+    const title = document.getElementById('darkModeBtn');
     //#region 
     // if (isDarkMode) {
     //     calculator.style.backgroundColor = '#fff';
@@ -71,7 +71,8 @@ function toggleDarkMode() {
 function toggleDarkMode2() {
     const calculator = document.querySelector('.calculator');
     const darkM = document.getElementById('darkM');
-    const lightM = document.getElementById('lightM');
+    // const lightM = document.getElementById('lightM');
+    const title = document.getElementById('title')
 
     //#region 
     // if (isDarkMode) {
@@ -86,10 +87,14 @@ function toggleDarkMode2() {
     //#endregion
     if (isDarkMode) {
         calculator.style.backgroundColor = '#fff';
-        darkM.textContent = 'dark_mode'
+        darkM.textContent = 'dark_mode';
+        darkM.style.color = 'black'
+        title.style.color = 'black'
     } else {
         calculator.style.backgroundColor = '#333';
-        darkM.textContent = 'light_mode'
+        darkM.textContent = 'light_mode';
+        darkM.style.color = 'white';
+        title.style.color = 'white';
     }
 
     isDarkMode = !isDarkMode;

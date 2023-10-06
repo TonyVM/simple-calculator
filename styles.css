@@ -102,9 +102,19 @@ body {
   'opsz' 24
 }
 
-.name_mode {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
+
+.header span {
+    cursor: pointer;
+}
+
+.darky-mode {
+    color: white;
+}
+
+
