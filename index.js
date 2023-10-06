@@ -6,7 +6,6 @@ const operators = ['+','-','/','*'];
 
 function appendToDisplay(value) {
     if (flag == false) {
-        console.log("WWWWWWWWWWW");
         currentInput += value;
         document.getElementById('display').value = currentInput;
     } else {
@@ -58,12 +57,39 @@ function toggleDarkMode() {
     //#endregion
     if (isDarkMode) {
         calculator.style.backgroundColor = '#fff';
-        darkModeBtn.textContent = 'Dark Mode';
+        darkModeBtn.textContent = 'Dark';
         darkModeBtn.classList.remove('light-mode');
     } else {
         calculator.style.backgroundColor = '#333';
-        darkModeBtn.innerText = 'Light Mode';
+        darkModeBtn.innerText = 'Light';
         darkModeBtn.classList.add('light-mode');
+    }
+
+    isDarkMode = !isDarkMode;
+}
+
+function toggleDarkMode2() {
+    const calculator = document.querySelector('.calculator');
+    const darkM = document.getElementById('darkM');
+    const lightM = document.getElementById('lightM');
+
+    //#region 
+    // if (isDarkMode) {
+    //     calculator.style.backgroundColor = '#fff';
+    //     colorModeBtn.setAttribute("class", "dark-mode-button");
+    //     colorModeBtn.innerText = 'Dark Mode';               
+    // } else {
+    //     calculator.style.backgroundColor = '#333';
+    //     colorModeBtn.setAttribute("class", "light-mode-button");
+    //     colorModeBtn.innerText = 'Light Mode'; 
+    // }
+    //#endregion
+    if (isDarkMode) {
+        calculator.style.backgroundColor = '#fff';
+        darkM.textContent = 'dark_mode'
+    } else {
+        calculator.style.backgroundColor = '#333';
+        darkM.textContent = 'light_mode'
     }
 
     isDarkMode = !isDarkMode;
