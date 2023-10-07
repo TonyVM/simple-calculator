@@ -44,33 +44,6 @@ function calculate() {
     }
 }
 
-// function toggleDarkMode() {
-//     const calculator = document.querySelector('.calculator');
-//     const darkModeBtn = document.getElementById('darkModeBtn');
-//     //#region 
-//     // if (isDarkMode) {
-//     //     calculator.style.backgroundColor = '#fff';
-//     //     colorModeBtn.setAttribute("class", "dark-mode-button");
-//     //     colorModeBtn.innerText = 'Dark Mode';               
-//     // } else {
-//     //     calculator.style.backgroundColor = '#333';
-//     //     colorModeBtn.setAttribute("class", "light-mode-button");
-//     //     colorModeBtn.innerText = 'Light Mode'; 
-//     // }
-//     //#endregion
-//     if (isDarkMode) {
-//         calculator.style.backgroundColor = '#fff';
-//         darkModeBtn.textContent = 'Dark';
-//         darkModeBtn.classList.remove('light-mode');
-//     } else {
-//         calculator.style.backgroundColor = '#333';
-//         darkModeBtn.innerText = 'Light';
-//         darkModeBtn.classList.add('light-mode');
-//     }
-
-//     isDarkMode = !isDarkMode;
-// }
-
 function toggleDarkMode2() {
     const calculator = document.querySelector('.calculator');
     const dark_light_switcher = document.getElementById('mode_switcher');
