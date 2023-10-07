@@ -15,19 +15,19 @@
     <div class="calculator">
 
         <div class="header">
-            <h2 class="title" id="title">Calculator v1</h2>
-            <span class="material-symbols-outlined" onclick="toggleDarkMode2()" id="darkM">
+            <h2 id="title">Calculator v1</h2>
+            <span class="material-symbols-outlined" onclick="toggleDarkMode2()" id="mode_switcher">
                 dark_mode
             </span>
-            <span class="material-symbols-outlined" style="display: none;" id="lightM">
+            <!-- <span class="material-symbols-outlined" style="display: none;" id="lightM">
                 light_mode
-            </span>
+            </span> -->
         </div>
         <div class="output">
             <input type="text" id="display" readonly>
         </div>
         <div class="buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="clearDisplay()" id="cleaner">C</button>
             <button class="button" onclick="appendToDisplay('7')">7</button>
             <button class="button" onclick="appendToDisplay('8')">8</button>
             <button class="button" onclick="appendToDisplay('9')">9</button>
@@ -44,7 +44,7 @@
             <button class="button" onclick="appendToDisplay('0')">0</button>
             <button class="button" onclick="calculate()">=</button>
             <button class="button" onclick="appendToDisplay('/')">/</button>
-            <button class="dark-mode-button" id="darkModeBtn" onclick="toggleDarkMode()">Dark</button>
+
         </div>
     </div>
 
