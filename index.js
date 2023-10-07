@@ -10,14 +10,14 @@ function appendToDisplay(value) {
         document.getElementById('display').value = currentInput;
     } else {
         if (operators.includes(value)) {
-            prevKey = ''
+            prevKey = '';
             currentInput += value;
             document.getElementById('display').value = currentInput;
         } else {
             currentInput = value;
             document.getElementById('display').value = currentInput;
         }
-        flag = false
+        flag = false;
     }
 }
 
@@ -25,7 +25,7 @@ function clearDisplay() {
     currentInput = '';
     prevKey = '';
     document.getElementById('display').value = '';
-    document.getElementById('cleaner').blur()
+    document.getElementById('cleaner').blur();
 }
 
 function calculate() {
@@ -37,10 +37,10 @@ function calculate() {
         currentInput = eval(currentInput).toString();
         document.getElementById('display').value = currentInput;
         prevKey = 'Enter';
-        flag = true
+        flag = true;
     } catch (error) {
         document.getElementById('display').value = 'Error';
-        currentInput = ''
+        currentInput = '';
     }
 }
 
@@ -49,10 +49,10 @@ function toggleDarkMode2() {
     const dark_light_switcher = document.getElementById('mode_switcher');
 
     if (isDarkMode) {
-        calculator.classList.remove('calculator_dark_mode')
+        calculator.classList.remove('calculator_dark_mode');
         dark_light_switcher.textContent = 'dark_mode';
     } else {
-        calculator.classList.add('calculator_dark_mode')
+        calculator.classList.add('calculator_dark_mode');
         dark_light_switcher.textContent = 'light_mode';
     }
 
